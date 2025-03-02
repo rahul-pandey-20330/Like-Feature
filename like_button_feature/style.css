@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(78, 174, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+body h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 18%;
+    left: 50%;
+    font-size: 2.5rem;
+    color: rgb(36, 35, 40);
+}
+.image{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid cyan;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.image i{
+    color: white;
+    font-size: 3.5rem;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease-in 0.5s;
+ }
